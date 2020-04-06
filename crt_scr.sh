@@ -1,7 +1,6 @@
 #! /bin/bash +x
 
 PATH_DIR="$HOME/bin";
-CURRENT_DIR=$(pwd);
 
 function check_name {
 	echo -n "input name of command> "; 
@@ -10,6 +9,7 @@ function check_name {
 			echo "incorrect name's file";
 			check_name;
 		fi;
+
 		if [[ -f $name_com ]]; then
 			echo "file is exist";
 			check_name;
