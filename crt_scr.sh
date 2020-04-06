@@ -47,6 +47,6 @@ while getopts "in:" opt; do
 
 	   	i) check_name; 
 		   check_mod;
-   		   add_file $name_com $mod		   
+   		   add_file $name_com $mod;		   
         esac
 done	
